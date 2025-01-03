@@ -16,3 +16,19 @@
 @import "./sass/sections/contact";
 @import "./sass/sections/hero";
 @import "./sass/sections/projects";
+
+.chip-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+
+  .chip {
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    color: $primary-color;
+    font-size: 14px;
+    pointer-events: none;
+    padding: 4px 8px;
+  }
+}
