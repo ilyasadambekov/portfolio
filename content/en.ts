@@ -91,9 +91,12 @@ export const en: Content = {
       featuresIntro:
         "Built on the Next.js 16 App Router with server components and statically generated product pages.",
       features: [
+        "Entire storefront UI from scratch, all pages responsive",
         "Checkout with map-based delivery, zone pricing, time slots, express and exact-time delivery, promo codes and bonus points",
-        "Stripe and PayPal payments with a currency selector",
+        "Single-flow checkout with guest orders synced on login",
+        "Payment flow with Stripe and PayPal redirects and a currency selector",
         "httpOnly cookie sessions with CSRF protection and server-side API proxies",
+        "Core Web Vitals and bundle-size optimization",
         "GA4 ecommerce events, Google Merchant feed and structured data",
       ],
       coverAlt: "Infinity Flowers home page",
@@ -116,12 +119,11 @@ export const en: Content = {
         text: "Built on the Infinity Flowers storefront",
       },
       features: [
-        "Full Russian localization, rebrand and tenge price formatting",
-        "Moved the store to a separate backend and API",
-        "FreedomPay payments with Kaspi, Halyk, Freedom and Forte, plus a payment-method selector",
-        "Phone + one-time-code login (OTP v2) with an anti-fraud session",
-        "Custom delivery calendar",
-        "Unavailable cart items listed in a collapsible section",
+        "Full Russian localization, rebrand and tenge pricing",
+        "Migration to a separate backend and API",
+        "Server-side API layer with httpOnly cookie sessions",
+        "Phone login with one-time codes and an anti-fraud session",
+        "Custom delivery calendar on react-aria",
       ],
       coverAlt: "ZakazBuketov.kz home page",
       mediaAlt: [
