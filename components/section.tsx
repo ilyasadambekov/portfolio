@@ -36,7 +36,11 @@ export function Section({
               <span className="text-fg">{title}</span>
             </h2>
           </Reveal>
-          <div className={wide ? "lg:col-span-12" : "lg:col-span-9"}>
+          <div
+            className={
+              wide ? "min-w-0 lg:col-span-12" : "min-w-0 lg:col-span-9"
+            }
+          >
             {children}
           </div>
         </div>

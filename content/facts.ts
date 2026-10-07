@@ -16,14 +16,14 @@ export const facts = {
     {
       id: "linkedin",
       href: "https://www.linkedin.com/in/ilyasadambekov",
-      display: "in/ilyasadambekov",
+      display: "linkedin.com/in/ilyasadambekov",
     },
     {
       id: "github",
       href: "https://github.com/ilyasadambekov",
-      display: "ilyasadambekov",
+      display: "github.com/ilyasadambekov",
     },
-    { id: "telegram", href: "https://t.me/mrcssxx", display: "@mrcssxx" },
+    { id: "telegram", href: "https://t.me/mrcssxx", display: "t.me/mrcssxx" },
     {
       id: "email",
       href: "mailto:adambekover@gmail.com",
@@ -32,7 +32,6 @@ export const facts = {
     {
       id: "cv",
       href: "/cv/cv.pdf",
-      display: "PDF",
     },
   ],
   roles: [

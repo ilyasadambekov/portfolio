@@ -29,7 +29,7 @@ export async function Contact({ locale }: { locale: Locale }) {
           ) : (
             <a
               href={email.href}
-              className="link-draw mt-2 inline-block text-3xl font-medium tracking-tight sm:text-5xl"
+              className="link-draw mt-2 inline-block text-[clamp(1.5rem,7vw,3rem)] font-medium tracking-tight [overflow-wrap:anywhere]"
             >
               {email.display}
             </a>

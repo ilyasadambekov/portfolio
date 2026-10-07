@@ -204,6 +204,9 @@ export const ru: Content = {
       ],
     },
   ],
+  contactValues: {
+    cv: "Открыть",
+  },
   contactLabels: {
     linkedin: "LinkedIn",
     github: "GitHub",

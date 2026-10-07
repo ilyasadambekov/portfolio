@@ -134,6 +134,13 @@ body {
   background-repeat: repeat-x;
 }
 
+@media (max-width: 639px) {
+  .leader {
+    min-width: 1rem;
+    margin-inline: 0.5rem;
+  }
+}
+
 .leader::after {
   content: "";
   position: absolute;

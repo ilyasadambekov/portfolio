@@ -203,6 +203,9 @@ export const en: Content = {
       ],
     },
   ],
+  contactValues: {
+    cv: "Open",
+  },
   contactLabels: {
     linkedin: "LinkedIn",
     github: "GitHub",

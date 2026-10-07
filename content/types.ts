@@ -13,7 +13,7 @@ export type ContactId = "linkedin" | "github" | "telegram" | "email" | "cv";
 export type ContactLink = {
   id: ContactId;
   href: string | Todo;
-  display: string | Todo;
+  display?: string | Todo;
 };
 
 export type MediaAsset =
@@ -89,6 +89,7 @@ export type Content = {
   projects: Record<ProjectSlug, Project>;
   skills: readonly SkillGroup[];
   contactLabels: ContactLabels;
+  contactValues: Partial<ContactLabels>;
   sections: {
     about: string;
     experience: string;
