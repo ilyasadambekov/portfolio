@@ -216,6 +216,12 @@ export default async function ProjectPage({
                   ))}
                 </ol>
               </Reveal>
+              {project.results ? (
+                <Reveal as="section">
+                  <h2 className={label}>{t("results")}</h2>
+                  <p className="mt-4 leading-relaxed">{project.results}</p>
+                </Reveal>
+              ) : null}
               <Reveal as="section">
                 <h2 className={label}>{t("stack")}</h2>
                 <ul className="mt-4 flex flex-wrap gap-2">

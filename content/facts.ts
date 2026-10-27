@@ -1,3 +1,4 @@
+import cvtailr from "@/assets/projects/cvtailr.png";
 import infinityFlowersDesktop from "@/assets/projects/infinity-flowers-desktop.png";
 import infinityFlowersMobile from "@/assets/projects/infinity-flowers-mobile.png";
 import nimble1 from "@/assets/projects/nimble1.png";
@@ -118,6 +119,30 @@ export const facts = {
           { device: "phone", asset: { kind: "image", image: priglos1 } },
           { device: "phone", asset: { kind: "image", image: priglos2 } },
           { device: "phone", asset: { kind: "image", image: priglos3 } },
+        ],
+      },
+    },
+    {
+      slug: "cvtailr",
+      name: "CVTailr",
+      live: { href: "https://www.cvtailr.com", display: "cvtailr.com" },
+      stack: [
+        "Next.js",
+        "TypeScript",
+        "Claude API",
+        "Prisma",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "TanStack Query",
+        "Zustand",
+        "Auth.js",
+        "Puppeteer",
+        "Vitest",
+      ],
+      media: {
+        layout: "desktop",
+        slots: [
+          { device: "desktop", asset: { kind: "image", image: cvtailr } },
         ],
       },
     },

@@ -156,6 +156,33 @@ export const en: Content = {
         "Priglos.kz organizer view: upcoming event with a countdown",
       ],
     },
+    cvtailr: {
+      summary:
+        "Web app that rewrites a CV for a specific job: upload your CV as a PDF, paste the job posting, and download a tailored CV in your original layout, without invented experience.",
+      market: "Global",
+      kind: "AI CV tailoring · SaaS",
+      roleTitle: "Solo developer",
+      company: "CVTailr",
+      problem:
+        "AI makes a CV look like a perfect match by inventing things. In testing, every CV the original version produced had claims the user’s real CV didn’t support: made-up percentages, certifications, job titles and skills copied from the job posting. People send these CVs to employers, who ask about every line. The fix had to keep the tailoring useful, make every claim traceable to the original CV, stay within a 300-second serverless time limit, and cost a few cents per CV.",
+      role: "Solo developer. Designed and built the whole product, from PDF parsing and the AI pipeline to payments, plus the evaluation system that measures fabrication.",
+      features: [
+        "PDF pipeline: extracts text, fonts, colours and layout from the uploaded CV and renders the tailored version with headless Chromium in the original style",
+        "Tailoring pipeline on the Claude API: generate, fact-check, then regenerate once if invented facts are found, all within the serverless time limit",
+        "Code-based fact-checker for employers, titles, dates, degrees, certifications and numbers, which handles typos, accents, word endings and acronyms (“BLS” ↔ “Basic Life Support”)",
+        "AI fact-checker that must quote the original CV for every claim it flags, with each quote verified in code before it’s shown",
+        "Keyword-match score calculated in code from keywords extracted once per job posting, replacing the AI’s self-reported ATS score",
+        "Review screen that highlights unverified and overstated claims before download, plus the job keywords the CV can’t honestly claim",
+        "Evaluation harness: 10 synthetic CVs that measure fabrication, cost and speed before and after each change, plus a human-labelled check of how accurate the AI fact-checker is",
+        "Accounts and billing: Google and email-link sign-in, Lemon Squeezy subscriptions, and a monthly free quota with atomic database updates, so parallel requests can’t exceed it",
+      ],
+      results:
+        "Across 10 test CVs × 3 runs, verified false facts (employers, titles, dates, numbers) dropped from 1.1 per CV to 0. The share of CVs with any invented claim fell from 100% to 27%. Cost is $0.038 per CV, and typical generation takes about 47 seconds.",
+      coverAlt: "CVTailr dashboard",
+      mediaAlt: [
+        "CVTailr dashboard: tailor-a-CV banner, average keyword match, plan and recent tailored CVs",
+      ],
+    },
   },
   skills: [
     {

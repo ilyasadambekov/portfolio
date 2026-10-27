@@ -6,7 +6,11 @@ export type YearMonth =
   `${number}-${"01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12"}`;
 
 export type ProjectSlug =
-  "nimble" | "infinity-flowers" | "zakazbuketov" | "priglos";
+  | "nimble"
+  | "infinity-flowers"
+  | "zakazbuketov"
+  | "priglos"
+  | "cvtailr";
 
 export type ContactId = "linkedin" | "github" | "telegram" | "email" | "cv";
 
@@ -27,6 +31,7 @@ export type MediaSlot = {
 
 export type ProjectMedia =
   | { layout: "phones"; slots: readonly MediaSlot[] }
+  | { layout: "desktop"; slots: readonly [MediaSlot] }
   | { layout: "desktop+phone"; slots: readonly [MediaSlot, MediaSlot] };
 
 export type ProjectFacts = {
@@ -67,6 +72,7 @@ export type Project = {
   related?: { slug: ProjectSlug; text: string };
   featuresIntro?: string;
   features: readonly string[];
+  results?: string;
   coverAlt: string;
   mediaAlt: readonly string[];
 };

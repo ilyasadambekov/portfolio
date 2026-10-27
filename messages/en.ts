@@ -35,6 +35,7 @@ const en = {
     problem: "The problem",
     role: "My role",
     features: "What I built",
+    results: "Results",
     roleLabel: "Role",
     company: "Company",
     visit: "Visit site",

@@ -15,7 +15,7 @@ function poster(slot: MediaSlot | undefined): StaticImageData | null {
 
 export function ProjectCover({ media, alt, label }: ProjectCoverProps) {
   const desktop =
-    media.layout === "desktop+phone" ? poster(media.slots[0]) : null;
+    media.layout === "phones" ? null : poster(media.slots[0]);
   const phones =
     media.layout === "phones"
       ? media.slots.map(poster).filter((image) => image !== null)

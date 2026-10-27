@@ -37,6 +37,7 @@ const ru: typeof en = {
     problem: "Задача",
     role: "Моя роль",
     features: "Что я сделал",
+    results: "Результаты",
     roleLabel: "Роль",
     company: "Компания",
     visit: "Открыть сайт",

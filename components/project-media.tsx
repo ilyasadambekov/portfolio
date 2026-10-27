@@ -41,6 +41,18 @@ export function ProjectMedia({
     );
   }
 
+  if (media.layout === "desktop") {
+    return (
+      <MediaFrame
+        slot={media.slots[0]}
+        alt={altAt(0)}
+        placeholder={labels.desktop}
+        sizes="(min-width: 1120px) 1056px, 100vw"
+        priority
+      />
+    );
+  }
+
   const [desktop, phone] = media.slots;
 
   return (
